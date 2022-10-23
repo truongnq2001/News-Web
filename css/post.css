@@ -86,3 +86,59 @@
     position: fixed;
     padding-right: 25px;
 }
+
+#sidebarContainer{
+    padding-left: 0px;
+}
+
+#sidebar{
+    border: 1px solid;
+    border-color: #e3e0e0;
+    height: 575px;
+    padding-left: 30px;
+    margin-top: 40px;
+}
+
+#sidebar h2.category{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 21px;
+    color: #5c5959;
+    font-weight: 600;
+}
+
+.articleSidebar{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.articleSidebar img{
+    width: 100px;
+    height: 80px;
+    margin: 0px;
+    object-fit: cover;
+}
+
+.articleSidebar a.image{
+    margin: 0px;
+}
+
+.articleSidebar:hover a{
+    color: #c00000;
+}
+
+.contentCategory{
+    margin-left: 13px;
+}
+
+.contentCategory h5{
+    font-size: 11px;
+    color: #777272;
+    margin: 0px 0px 2px 0px;
+    font-weight: 200;
+}
+
+.contentCategory a{
+    width: 180px;
+    font-size: 14px;
+}

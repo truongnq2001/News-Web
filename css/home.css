@@ -97,8 +97,17 @@ img{
 }
 
 .listMenuContainer{
-    margin-right: 130px;
+    margin-right: 120px;
     margin-left: 100px;
+}
+
+.toolBox{
+    display: flex;
+}
+
+.userIcon{
+    margin-top: 21px;
+    margin-left: 25px;
 }
 
 .searchForm{
@@ -161,14 +170,13 @@ input:focus{
 
 .showBox{
     cursor: pointer;
-    margin-right: 1px;
 }
 
 #searchBox{
     display: none;
-    position: fixed;
-    margin-top: -34px;
-    margin-left: -163.5px;
+    position: absolute;
+    right: 49px;
+    bottom: 17px;
 }
 
 #searchBox input{

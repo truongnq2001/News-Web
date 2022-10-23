@@ -64,20 +64,25 @@ header.innerHTML = `<div class="menuContainer">
                 </li>
                 <li class="iconDot" onmouseover="showMenuPopup()">
                     <i class="fas fa-ellipsis-h" style="font-size: 22px;"></i>
-                </li>     
+                </li>       
             </ul>
         </div>
         <div class="toolBox">
             <div class="searchForm">
                 <div class="showBox" onclick="showSearchBox()">
-                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <i class="fi fi-rr-search"></i>
                 </div>
                 
                 <div id="searchBox">
                     <input placeholder="Nhập nội dung cần tìm...">
-                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <i class="fi fi-rr-search"></i>
                 </div>
                 <div id="hiddenBox" onclick="hiddenSearchBox()"></div>
+            </div>
+            <div class="userIcon">
+                <a href="sign-in.html" style="text-decoration: none;">
+                    <i class="fi fi-rr-user" style="font-size: 22px;"></i>
+                </a>
             </div>
         </div>
     </div>

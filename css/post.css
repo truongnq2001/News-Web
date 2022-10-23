@@ -1,0 +1,88 @@
+.mainArticle{
+    padding-right: 50px;
+}
+
+.mainArticle p.title{
+    font-weight: 700;
+    font-size: 32px;
+    font-family: "Merriweather",serif;
+}
+
+.mainArticle p.selected{
+    font-size: 18px;
+}
+
+.mainArticle p.articleSummary{
+    font-size: 18px;
+}
+
+.mainArticle p.articleWrapper img{
+    width: 100%;
+}
+
+.mainArticle p.articleWrapper{
+    margin-bottom: 7px;
+}
+
+.articleHeader{
+    display: flex;
+}
+
+.articleHeader a.catagory{
+    margin-left: 0px;
+    color: #c00000; 
+}
+
+.articleHeader li.articleAuthor{
+    list-style: none;
+    font-weight: bold;
+}
+
+.articleHeader li.articlePublish{
+    margin-left: 30px;
+    color: #5c5959;
+}
+
+.lastArticle{
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.lastArticle a.image{
+    width: 80%;
+}
+
+.lastArticle img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.lastArticleHeader{
+    font-size: 20px;
+    font-weight: 600;
+    color: #5c5959;
+}
+
+.lastArticleContent{
+    margin-left: 20px;
+}
+
+.lastArticleContent a.title{
+    font-size: 18px;
+    color: #5c5959;
+}
+
+.lastArticle:hover a.title{
+    color: #c00000;
+}
+
+.lastArticleContent p{
+    color: #5c5959;
+}
+
+#sidebar{
+    position: fixed;
+    padding-right: 25px;
+}

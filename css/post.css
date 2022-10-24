@@ -94,9 +94,9 @@
 #sidebar{
     border: 1px solid;
     border-color: #e3e0e0;
-    height: 575px;
+    height: 530px;
     padding-left: 30px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 #sidebar h2.category{
@@ -113,8 +113,8 @@
 }
 
 .articleSidebar img{
-    width: 100px;
-    height: 80px;
+    width: 85px;
+    height: 70px;
     margin: 0px;
     object-fit: cover;
 }
@@ -140,5 +140,5 @@
 
 .contentCategory a{
     width: 180px;
-    font-size: 14px;
+    font-size: 13px;
 }

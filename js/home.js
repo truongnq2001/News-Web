@@ -21,8 +21,8 @@ $( document ).ready(function() {
         $('#articleTopMediumImg2').css('height', h1 + "px");
     else
         $('#articleTopMediumImg1').css('height', h2 + "px");
+        
     $('.centerNewsContentSmall').css('height', $('.centerNewsBigImg').height() + $('.centerNewsBigTitle').height() + "px");
-
     $('.smallTravel a.image').css('height', $('.bigTravel').height()*0.33 + "px");
     
     var count=$("#contentVertical > article").length;
@@ -53,7 +53,7 @@ header.innerHTML = `<div class="menuContainer">
                 <li>
                     <a href="#">Thể thao</a>
                 </li>
-                <li>
+                <li class="techMenu">
                     <a href="#">Công nghệ</a>
                 </li>
                 <li>

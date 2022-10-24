@@ -118,7 +118,21 @@
                       </div>
                     </div>
                 </div>
-                <div class="newsVertical col-lg-5">
+                <div class="newsMedium col-lg-3">
+                    <article class="newsArticleMedium">
+                        <a class="image" href="#">
+                            <img src="img/cau-rach-mieu-2.jpg">
+                        </a>
+                        <a class="title" href="#"> Công trường cầu Rạch Miễu 2 vắng vẻ sau 7 tháng khởi công</a>
+                    </article>
+                    <article class="newsArticleMedium">
+                        <a class="image" href="#">
+                            <img src="img/dbqh-dau-dau-viec-bs-xin-nghi.jpg">
+                        </a>
+                        <a class="title" href="#">Đại biểu Quốc hội đau đáu việc bác sĩ xin nghỉ, bệnh viện dừng tự chủ</a>
+                    </article>
+                </div>
+                <div class="newsVertical col-lg-3">
                     <article class="newsArticleVertical">
                         <a class="image" href="#">
                             <img src="img/oto-dam-xe-may-cau-vuot-nhc.jpg">
@@ -137,14 +151,13 @@
                         </a>
                         <a class="title" href="#">Người dân Cần Thơ vật lộn với đợt triều cường lớn nhất trong năm</a>
                     </article>
-                    <article class="newsArticleVertical" style="border: none; padding: 0px; margin: 0;">
+                    <article class="newsArticleVertical" style="border: none; margin: 0;">
                         <a class="image" href="#">
                             <img src="img/nhieu-du-an-cong-vien-o-hanoi-cham-tien-do.jpg">
                         </a>
                         <a class="title" href="#">Nhiều dự án công viên ở Hà Nội chậm tiến độ</a>
                     </article>
                 </div>
-                <div class="col-lg-1"></div>
         </div>
         </div>
         <div class="worldNews">
@@ -586,4 +599,7 @@
     </footer>
 </body>
 <script src="js/home.js"></script>
+<script>
+$('.newsArticleMedium > a.image').css('height', $('.newsMedium').height()*0.3 + "px");
+</script>
 </html>

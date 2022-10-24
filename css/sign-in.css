@@ -1,0 +1,196 @@
+.signInForm{
+    margin-top: 125px;
+    width: 350px;
+    box-shadow: 0px 8px 12px 2px #39333329;
+    margin-bottom: 125px;
+    padding: 30px;
+}
+
+.logoUser{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #5c5959;
+}
+
+.loginInput{
+    text-align: center;
+}
+
+.loginInput input{
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #b9b4b4;
+    border-radius: 5px;
+    width: 270px;
+    font-size: 15px;
+}
+
+.loginInput p{
+    font-size: 10px;
+    color: red;
+    margin: 0px 0px 0px 12px;
+    float: left;
+}
+
+.loginInput div{
+    margin-bottom: 20px;
+}
+
+.checkboxPass{
+    display: flex;
+    font-size: 15px;
+}
+
+.checkboxPass div{
+    display: flex;
+    margin-right: 35px;
+}
+
+.checkboxPass p{
+    margin: 0px 0px 0px 8px;
+}
+
+.checkboxPass a{
+    text-decoration: none;
+    font-weight: 300;
+    color: #1a73e8;
+}
+
+.submitBtnContainer{
+    text-align: center;
+    margin: 15px 0px;
+}
+
+.submitBtnContainer button{
+    padding: 7px 90px;
+    font-size: 17px;
+    border-radius: 8px;
+    border: none;
+    background: #c00000;
+    color: white;
+    font-weight: 600;
+}
+
+.signUpLink{
+    display: flex;
+    font-size: 15px;
+}
+
+.signUpLink p{
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.signUpLink a{
+    text-decoration: none;
+    font-weight: 300;
+    color: #1a73e8;
+    margin-left: 0px;
+}
+
+.socialNetworkContainer{
+    margin: 15px 0px;
+}
+
+.socialNetwork{
+    margin: 0 auto;
+    width: 250px;
+    border-radius: 25px;
+}
+
+.buttonSN{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-weight: 700;
+}
+
+.buttonSN div{
+    margin: 0px 5px 0px 0px;
+}
+
+.buttonSN p{
+    margin: 0px 0px 0px 10px;
+    font-size: 15px;
+}
+
+.buttonSN i{
+    font-size: 20px;
+}
+
+.google{
+    border: 1px solid #c00000;
+    color: #c00000;
+}
+
+.facebook{
+    border: 1px solid #3B5999;
+    color: #3B5999;
+}
+
+.twitter{
+    border: 1px solid #4688F1;
+    color: #4688F1;
+}
+
+.signUpForm{
+    margin-top: 150px;
+    width: 350px;
+    box-shadow: 0px 8px 12px 2px #39333329;
+    margin-bottom: 165px;
+    padding: 30px;
+}
+
+.registerInput{
+    text-align: center;
+}
+
+.registerInput input{
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #b9b4b4;
+    border-radius: 5px;
+    width: 270px;
+    font-size: 15px;
+}
+
+.registerInput p{
+    font-size: 10px;
+    color: red;
+    margin: 0px 0px 0px 12px;
+    float: left;
+}
+
+.registerInput div{
+    margin-bottom: 20px;
+}
+
+.registerBtnContainer{
+    text-align: center;
+    margin: 0px 0px 15px 0px;
+}
+
+.registerBtnContainer button{
+    padding: 7px 100px;
+    font-size: 17px;
+    border-radius: 8px;
+    border: none;
+    background: #c00000;
+    color: white;
+    font-weight: 600;
+}
+
+.signInLink{
+    display: flex;
+    font-size: 15px;
+}
+
+.signInLink p{
+    margin-left: 12px;
+    margin-right: 5px;
+}
+
+.signInLink a{
+    text-decoration: none;
+    font-weight: 300;
+    color: #1a73e8;
+    margin-left: 0px;
+}

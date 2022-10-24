@@ -277,9 +277,6 @@
             <div class="row contentVerticalContainer" style="margin-bottom: 60px; margin-top: 20px;">
                 <div class="col-lg-8 col-md-12" id="contentVertical">
                     <div class="bonusButtonContainer">
-                        <div class="spinner-border text-secondary" role="status" style="display:none;">
-                            <span class="sr-only">Loading...</span>
-                        </div>
                         <button class="bonusButton">Xem thêm</button>
                     </div>
                 </div>
@@ -341,6 +338,10 @@
 </body>
 <script src="js/home.js"></script>
 <script>
+
+$('.techMenu').css('border-bottom','4px solid #c00000')
+$('.techMenu > a').css('color','#c00000')
+
 const data = [
     {imgArticle: 'img/phan-lan-dong-cua-bien-gioi-voi-nga.jpg',
     titleArticle: 'Phần Lan đóng cửa biên giới với khách du lịch Nga', 

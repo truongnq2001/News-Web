@@ -43,14 +43,24 @@
     color: #5c5959;
 }
 
+.imgDes{
+    font-size: 14px;
+}
+
+.lastArticleContainer{
+    margin-top: 50px;
+}
+
 .lastArticle{
-    width: 100%;
+    width: 90%;
     display: flex;
     margin-bottom: 20px;
+    float: left;
 }
 
 .lastArticle a.image{
-    width: 80%;
+    width: 350px;
+    height: 140px;
 }
 
 .lastArticle img{
@@ -60,17 +70,18 @@
 }
 
 .lastArticleHeader{
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 600;
     color: #5c5959;
 }
 
 .lastArticleContent{
     margin-left: 20px;
+    width: 100%;
 }
 
 .lastArticleContent a.title{
-    font-size: 18px;
+    font-size: 19px;
     color: #5c5959;
 }
 
@@ -80,11 +91,13 @@
 
 .lastArticleContent p{
     color: #5c5959;
+    font-size: 14px;
 }
 
 #sidebar{
-    position: fixed;
+    position: sticky;
     padding-right: 25px;
+    top: 100px;
 }
 
 #sidebarContainer{
@@ -141,4 +154,44 @@
 .contentCategory a{
     width: 180px;
     font-size: 13px;
+}
+
+.footerContent{
+    display: flex;
+    width: 750px;
+    margin-left: 0;
+}
+
+.footerContent i{
+    font-size: 23px;
+}
+
+.footerContent div{
+    display: flex;
+}
+
+.footerContent p{
+    margin-left: 10px;
+    color: #666262;
+}
+
+.saveArticle{
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+.loveArticle{
+    margin-left: 15px;
+}
+
+.shareArticle p{
+    margin-right: 10px;
+}
+
+.shareArticle a{
+    margin-right: 10px;
+}
+
+.shareArticle i{
+    color: #666262;
 }

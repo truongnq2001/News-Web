@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="img/logo/logoB.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/home.css">
     <script type="text/javascript" src="jquery-1.6.2.min.js"></script>
@@ -21,28 +22,24 @@
     </header>
     <div class="mainBody">
         <div class="topNews">
-            <div class="row" style="padding-top: 75px; margin: 0 auto;">
+            <div class="row" style="padding-top: 75px; margin: 0 auto; height: 590px;">
                 <div class="col-lg-9 col-md-8 col-sm-12 row CenterLeftContainer" style="margin-top: 10px; padding-right: 0px;">
                     <div class="col-lg-4 col-md-4 col-sm-12 row" id="contentLeftContainer">
                         <article class="contentLeft contentLeftFirst">
                             <a class="image" id="contentLeftImg1" href="#">
-                                <img src="img/bo-cong-an-chi-cach-sd-vneid.jpg">
+                                <img src="img/loi-nhuan-cty-me-gg.jpg">
                             </a>
-                            <a class="title" href="#">Bộ Công an chỉ cách sử dụng app VNeID thay thế CCCD gắn chip</a>
+                            <a class="title" href="#">Lợi nhuận công ty mẹ của Google giảm 27%</a>
                         </article>
-                        <article class="contentLeft" style="border-color: #faf5f5;">
+                        <article class="contentLeft contentLeftLast" style="border-color: #faf5f5;">
                             <a class="image" id="contentLeftImg2" href="#">
-                                <img src="img/nord_strea_bqpdm.jpg">
+                                <img src="img/phan-ung-cua-allgeri-khi-juve-bi-loai-khoi-cpl.jpg">
                             </a>
-                            <a class="title" href="#">Phương Tây lộ điểm yếu qua sự cố Nord Stream</a>
+                            <a class="title" href="#">Phản ứng của Allegri khi Juve bị loại khỏi Champions League</a>
                         </article>
                     </div>
-                    <div class="col-lg-8 col-md-8 col-sm-12 contentCenter">
-                        <a class="image" href="#">
-                            <img src="img/thang-arab-tuyen-futsal-len-ngoi-dau.jpg">
-                        </a>
-                        <a class="title" href="#">Thắng Saudi Arabia 3-1, tuyển futsal Việt Nam chiếm ngôi đầu bảng</a>
-                        <p>Dù gặp không ít khó khăn, tuyển futsal Việt Nam vẫn thể hiện được bản lĩnh khi đánh bại Saudi Arabia ở lượt thứ 2 vòng chung kết futsal châu Á 2022.</p>
+                    <div class="col-lg-8 col-md-8 col-sm-12">
+   
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-12" id="contentRight">
@@ -60,9 +57,9 @@
                     </div>
                     <div class="contentRightList">
                         <a class="image" href="#">
-                            <img src="img/haaland-chua-the-hien-het.jpg">
+                            <img src="img/cau-rach-mieu-2.jpg">
                         </a>
-                        <a class="title" href="#">Cựu tiền đạo Man City: 'Haaland chưa thể hiện hết 50% năng lực'</a>
+                        <a class="title" href="#">Công trường cầu Rạch Miễu 2 vắng vẻ sau 7 tháng khởi công</a>
                     </div>
                     <div class="contentRightList">
                         <a class="image" href="#">
@@ -72,9 +69,9 @@
                     </div>
                     <div class="contentRightList" style="border-color: #faf5f5;">
                         <a class="image" href="#">
-                            <img src="img/apple-am-tham.jpg">
+                            <img src="img/dbqh-dau-dau-viec-bs-xin-nghi.jpg">
                         </a>
-                        <a class="title" href="#">Apple âm thầm ra mắt thiết bị mới vào tháng 10</a>
+                        <a class="title" href="#">Đại biểu Quốc hội đau đáu việc bác sĩ xin nghỉ, bệnh viện dừng tự chủ</a>
                     </div>
                 </div>
             </div>
@@ -601,5 +598,40 @@
 <script src="js/home.js"></script>
 <script>
 $('.newsArticleMedium > a.image').css('height', $('.newsMedium').height()*0.3 + "px");
+$('.contentLeft >  a.image').css('height', $('.newsMedium').height()*0.33 + "px");
+
+const articleCenter = [
+        {imgArticle: 'img/VMS-nhieu-xe-moi.jpg',
+        titleArticle: 'Nhiều xe mới và concept xuất hiện tại VMS 2022', 
+        summaryArticle: 'Các mẫu xe mới được giới thiệu có cả xe thể thao và xe điện, trong khi một số mẫu concept mang tính trình diễn công nghệ cũng xuất hiện.'},
+
+        {imgArticle: 'img/u20-vn-chung-bang-iran.jpg',
+        titleArticle: 'U20 Việt Nam chung bảng Iran và Australia', 
+        summaryArticle: 'Theo kết quả bốc thăm chia bảng VCK U20 châu Á 2023 diễn ra trưa 26/10, U20 Việt Nam rơi vào bảng B với các đối thủ Iran, Australia và Qatar.'},
+
+        {imgArticle: 'img/angelababy-so-lap-lai-sai-lam-sau-do-vo-hhm.jpg',
+        titleArticle: 'Angelababy sợ lặp lại sai lầm sau đổ vỡ với Huỳnh Hiểu Minh', 
+        summaryArticle: 'Nữ diễn viên chia sẻ đã quen với cuộc sống độc thân. Theo Angelababy, tuổi tác cao và việc từng ly hôn là trở ngại khiến cô khó mở lòng để bắt đầu mối quan hệ tình cảm mới.'},
+]
+
+var articleIndex = 0;
+showSlides(2)
+function showSlides(num) {
+    if (num >= articleCenter.length) {
+        articleIndex = 0
+    }
+    $('#contentLeftContainer').next().html(
+    `<div class="contentCenter">
+        <a class="image" href="#">
+            <img src="${articleCenter[num].imgArticle}">
+        </a>
+        <a class="title" href="#">${articleCenter[num].titleArticle}</a>
+        <p>${articleCenter[num].summaryArticle}</p>
+    </div>`)
+}
+
+setInterval(function() {
+  showSlides(articleIndex++);
+}, 10000);
 </script>
 </html>

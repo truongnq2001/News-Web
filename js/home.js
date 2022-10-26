@@ -6,6 +6,7 @@ hiddenSearchBox=() => {
     $('#searchBox').css('display', 'none');
     $('#hiddenBox').css('display', 'none');
 }
+
 showMenuPopup=() => {
     $('#menuPopupActive').css('display', 'block');
 }
@@ -37,30 +38,32 @@ header.innerHTML = `<div class="menuContainer">
             <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
         </div>
         <div class="logo">
-            <img src="img/logo.png">
+            <a href="home.html">
+                <img src="img/logo.png">
+            </a>
         </div>
         <div class="listMenuContainer">
             <ul>
                 <li>                      
-                    <a href="#">Thời sự</a>
+                    <a href="catagory.html">Thời sự</a>
                 </li>
                 <li>                      
-                    <a href="#">Thế giới</a>
+                    <a href="catagory.html">Thế giới</a>
                 </li>
                 <li>
-                    <a href="#">Kinh doanh</a>
+                    <a href="catagory.html">Kinh doanh</a>
                 </li>
                 <li>
-                    <a href="#">Thể thao</a>
+                    <a href="catagory.html">Thể thao</a>
                 </li>
                 <li class="techMenu">
-                    <a href="#">Công nghệ</a>
+                    <a href="catagory.html">Công nghệ</a>
                 </li>
                 <li>
-                    <a href="#">Giải trí</a>
+                    <a href="catagory.html">Giải trí</a>
                 </li>
                 <li>
-                    <a href="#">Du lịch</a>
+                    <a href="catagory.html">Du lịch</a>
                 </li>
                 <li class="iconDot" onmouseover="showMenuPopup()">
                     <i class="fas fa-ellipsis-h" style="font-size: 22px;"></i>

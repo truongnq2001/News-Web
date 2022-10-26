@@ -179,6 +179,16 @@ input:focus{
     bottom: 17px;
 }
 
+#searchBox{
+    animation-name: fade;
+    animation-duration: 0.3s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
 #searchBox input{
     border-radius: 20px;
     border: 1px solid;
@@ -207,6 +217,16 @@ input:focus{
 .userIcon i{
     font-size: 22px;
     color: #5c5959;
+}
+
+.menuPopupContainer{
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
 }
 
 .menuPopupContainer{
@@ -292,7 +312,7 @@ input:focus{
 
 .contentCenter a.image{
     margin: 0px;
-    max-height: 350px;
+    height: 350px;
 }
 
 .contentCenter img{
@@ -305,6 +325,16 @@ input:focus{
     font-size: 22px;
     margin: 12px 0px;
 }
+
+.contentCenter{
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
 
 div.contentCenter:hover a.title{
     color: #c00000;

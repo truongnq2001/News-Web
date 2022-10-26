@@ -95,49 +95,49 @@ header.innerHTML = `<div class="menuContainer">
         <div class="col-lg-3 listMenuPopup">
             <div class="titleMenuPopup">
                 <p id="tickTile">#</p>
-                <a id="tile" href="#">Thời sự</a>
+                <a id="tile" href="post.html">Thời sự</a>
             </div>
             <div class="categoryMenuPopup">
-                <a href="#">Xã hội</a>
-                <a href="#">Chính trị</a>
-                <a href="#">Đô thị</a>
-                <a href="#">Giao thông</a>
+                <a href="post.html">Xã hội</a>
+                <a href="post.html">Chính trị</a>
+                <a href="post.html">Đô thị</a>
+                <a href="post.html">Giao thông</a>
             </div>
         </div>
         <div class="col-lg-3 listMenuPopup">
             <div class="titleMenuPopup">
                 <p id="tickTile">#</p>
-                <a id="tile" href="#">Thế giới</a>
+                <a id="tile" href="post.html">Thế giới</a>
             </div>
             <div class="categoryMenuPopup">
-                <a href="#">Tư liệu</a>
-                <a href="#">Phân tích</a>
-                <a href="#">Người Việt 4 phương</a>
-                <a href="#">Tầm nhìn</a>
+                <a href="post.html">Tư liệu</a>
+                <a href="post.html">Phân tích</a>
+                <a href="post.html">Người Việt 4 phương</a>
+                <a href="post.html">Tầm nhìn</a>
             </div>
         </div>
         <div class="col-lg-3 listMenuPopup">
             <div class="titleMenuPopup">
                 <p id="tickTile">#</p>
-                <a id="tile" href="#">Kinh doanh</a>
+                <a id="tile" href="post.html">Kinh doanh</a>
             </div>
             <div class="categoryMenuPopup">
-                <a href="#">Quốc tế</a>
-                <a href="#">Bất động sản</a>
-                <a href="#">Kinh tế số</a>
-                <a href="#">Chứng khoán</a>
+                <a href="post.html">Quốc tế</a>
+                <a href="post.html">Bất động sản</a>
+                <a href="post.html">Kinh tế số</a>
+                <a href="post.html">Chứng khoán</a>
             </div>
         </div>
         <div class="col-lg-3 listMenuPopup">
             <div class="titleMenuPopup">
                 <p id="tickTile">#</p>
-                <a id="tile" href="#">Thể thao</a>
+                <a id="tile" href="post.html">Thể thao</a>
             </div>
             <div class="categoryMenuPopup">
-                <a href="#">Bóng đá quốc tế</a>
-                <a href="#">Bóng đá Việt Nam</a>
-                <a href="#">eSports</a>
-                <a href="#">Các môn khác</a>
+                <a href="post.html">Bóng đá quốc tế</a>
+                <a href="post.html">Bóng đá Việt Nam</a>
+                <a href="post.html">eSports</a>
+                <a href="post.html">Các môn khác</a>
             </div>
         </div>
     </div>
@@ -145,47 +145,47 @@ header.innerHTML = `<div class="menuContainer">
         <div class="col-lg-3 listMenuPopup">
             <div class="titleMenuPopup">
                 <p id="tickTile">#</p>
-                <a id="tile" href="#">Công nghệ</a>
+                <a id="tile" href="post.html">Công nghệ</a>
             </div>
             <div class="categoryMenuPopup">
-                <a href="#">Blockchain</a>
-                <a href="#">Mobile</a>
-                <a href="#">Laptop</a>
-                <a href="#">Internet</a>
+                <a href="post.html">Blockchain</a>
+                <a href="post.html">Mobile</a>
+                <a href="post.html">Laptop</a>
+                <a href="post.html">Internet</a>
             </div>
         </div>
         <div class="col-lg-3 listMenuPopup">
             <div class="titleMenuPopup">
                 <p id="tickTile">#</p>
-                <a id="tile" href="#">Giải trí</a>
+                <a id="tile" href="post.html">Giải trí</a>
             </div>
             <div class="categoryMenuPopup">
-                <a href="#">Giới sao</a>
-                <a href="#">Âm nhạc</a>
-                <a href="#">Phim ảnh</a>
-                <a href="#">Thời trang</a>
+                <a href="post.html">Giới sao</a>
+                <a href="post.html">Âm nhạc</a>
+                <a href="post.html">Phim ảnh</a>
+                <a href="post.html">Thời trang</a>
             </div>
         </div>
         <div class="col-lg-3 listMenuPopup">
             <div class="titleMenuPopup">
                 <p id="tickTile">#</p>
-                <a id="tile" href="#">Du lịch</a>
+                <a id="tile" href="post.html">Du lịch</a>
             </div>
             <div class="categoryMenuPopup">
-                <a href="#">Điểm đến</a>
-                <a href="#">Ẩm thực</a>
-                <a href="#">Kinh nghiệm du lịch</a>
+                <a href="post.html">Điểm đến</a>
+                <a href="post.html">Ẩm thực</a>
+                <a href="post.html">Kinh nghiệm du lịch</a>
             </div>
         </div>
         <div class="col-lg-3 listMenuPopup">
             <div class="titleMenuPopup">
                 <p id="tickTile">#</p>
-                <a id="tile" href="#">Đời sống</a>
+                <a id="tile" href="post.html">Đời sống</a>
             </div>
             <div class="categoryMenuPopup">
-                <a href="#">Bài học sống</a>
-                <a href="#">Tiêu dùng</a>
-                <a href="#">Nhà</a>
+                <a href="post.html">Bài học sống</a>
+                <a href="post.html">Tiêu dùng</a>
+                <a href="post.html">Nhà</a>
             </div>
         </div>
     </div>
@@ -211,11 +211,11 @@ footer.innerHTML = `<div class="row" id="footerContainer">
         <p>Địa chỉ: 123ABCXYZ đường Trần Phú, Quận Hà Đông, Hà Nội</p>
         <p>Hotline: 0123.456.789 - Email: bestnews123@gmail.com</p>
         <div class="linkWord">
-            <a href="#">Liên hệ</a>
+            <a href="post.html">Liên hệ</a>
             <p>|</p> 
-            <a href="#">Tuyển dụng</a> 
+            <a href="post.html">Tuyển dụng</a> 
             <p>|</p> 
-            <a href="#">Quảng cáo</a>  
+            <a href="post.html">Quảng cáo</a>  
         </div>
     </div>         
 

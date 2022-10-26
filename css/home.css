@@ -685,8 +685,6 @@ div.contentRightList:hover a{
 }
 
 .articleVertical a.image{
-    height: 100%;
-    width: 80%;
     max-width: 203.31px;
     max-height: 171.75px;
 }
@@ -695,6 +693,10 @@ div.contentRightList:hover a{
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+.articleContent{
+    width: 70%;
 }
 
 .articleContent a{

@@ -27,7 +27,7 @@ $( document ).ready(function() {
     $('.smallTravel a.image').css('height', $('.bigTravel').height()*0.33 + "px");
     
     var count=$("#contentVertical > article").length;
-    var h3 = $('.articleVertical').height();
+    var h3 = $('#contentVertical > article').height();
     $('.contentVerticalContainer').css('height', (h3+40)*count + "px");
 });
 

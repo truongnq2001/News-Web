@@ -546,7 +546,7 @@ div.contentRightList:hover a{
 }
 
 .newsArticleVertical a.image{
-    height: 100%;
+    height: 90%;
     width: 60%;
 }
 
@@ -675,8 +675,7 @@ div.contentRightList:hover a{
     width: 100%;
     padding-bottom: 20px;
     display: flex;
-    height: 25%;
-    max-height: 192.75px;
+    height: 175px;
 }
 
 .articleVertical a{
@@ -687,6 +686,7 @@ div.contentRightList:hover a{
 .articleVertical a.image{
     max-width: 203.31px;
     max-height: 171.75px;
+    height: 100%;
 }
 
 .articleVertical img{
@@ -781,7 +781,7 @@ div.contentRightList:hover a{
 
 .contentCategory a{
     width: 180px;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 @media screen and (max-width: 1100px) {
@@ -880,6 +880,10 @@ div.contentRightList:hover a{
     border: none;
     padding: 0px;
     height: 70%;
+}
+
+.articleBig a.image{
+    height: 300px;
 }
 
 #articleListSmall{

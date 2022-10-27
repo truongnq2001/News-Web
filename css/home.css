@@ -1079,13 +1079,13 @@ div.contentRightList:hover a{
 
 .techNewsBig{
     padding-top: 20px;
-    height: 55%;
+    height: max-content;
     display: table;
 }
 
 .techNewsBig img{
     width: 100%;
-    height: 100%;
+    height: 225px;
     object-fit: cover;
 }
 
@@ -1095,7 +1095,7 @@ div.contentRightList:hover a{
 
 .techNewsBig a.image{
     padding-top: 0px;
-    height: 90%;
+    height: 225px;;
     margin: 0px;
     display: table-row;
 }
@@ -1109,12 +1109,11 @@ div.contentRightList:hover a{
     display: flex;
     margin-bottom: 15px;
     width: 100%;
-    height: 30%;
 }
 
 .articleTech a.image{
     width: 50%;
-    height: 100%;
+    height: 90px;
 }
 
 .articleTech a.title{
@@ -1207,19 +1206,34 @@ div.contentRightList:hover a{
     text-decoration: none;
 }
 
-.lastNewsBig{
-    height: 65%;
+.lastNewsBig a.image{
+    margin: 0px;
+    height: 225px;
 }
 
 .lastNewsBig img{
     width: 100%;
-    margin-top: 20px;
-    height: 56%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .lastNewsBig a{
     margin: 7px 0px 13px 0px;
     font-size: 18px;
+}
+
+.lastNewsBig{
+    display: table;
+    padding-top: 20px;
+}
+
+.lastNewsBig a.title{
+    width: 100%;
+    min-height: 54px;
+}
+
+.lastNewsBig:hover a{
+    color: #c00000;
 }
 
 .lastNewsMedium{
@@ -1228,14 +1242,7 @@ div.contentRightList:hover a{
 
 .lastNewsMedium a.image{
     width: 100%;
-}
-
-.lastNewsBig a.title{
-    width: 85%;
-}
-
-.lastNewsBig:hover a{
-    color: #c00000;
+    height: 90px;
 }
 
 .articleLast{
@@ -1249,11 +1256,15 @@ div.contentRightList:hover a{
 
 .articleLast a{
     font-size: 15px;
+    font-size: 15px;
+    width: 130%;
 }
 
 .articleLast img{
     width: 100%;
     padding-right: 10px;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* footer */

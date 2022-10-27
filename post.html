@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
-    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/category.css">
     <link rel="stylesheet" href="css/post.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <title>Bestnews</title>
@@ -25,7 +25,7 @@
         <div class="mainArticleContainer row">
             <article class="mainArticle col-lg-8">
                 <div class="articleHeader">
-                    <a class="catagory" href="catagory.html">CÔNG NGHỆ</a>
+                    <a class="category" href="category.html">CÔNG NGHỆ</a>
                     <ul style="display:flex; margin-right: 0px;">
                         <li class="articleAuthor">Long Nguyễn</li>
                         <li class="articlePublish">Thứ tư, 26/10/2022, 19:31 (GMT+7)</li>
@@ -90,7 +90,7 @@
                 </p>
                 <div class="lastArticleContainer">
                     <p class="lastArticleHeader">Bài viết liên quan</p>
-                    <article class="lastArticle">
+                    <article class="endArticle">
                         <a class="image" href="post.html">
                             <img src="img/nhung-laptop-choi-game.jpg">
                         </a>
@@ -99,7 +99,7 @@
                             <p>Lenovo Legion 5, Acer Nitro 5 hay MSI Bravo 15 là những chiếc laptop gaming có hiệu năng, màn hình, tản nhiệt tốt trong phân khúc dưới 30 triệu đồng.</p>
                         </div>
                     </article>
-                    <article class="lastArticle">
+                    <article class="endArticle">
                         <a class="image" href="post.html">
                             <img src="img/doanh-nghiep-tq-livestream-tim-ng-lam.jpg">
                         </a>
@@ -190,17 +190,34 @@
                 </a>
             </div>
         </div>
+        <div class="newNews">
+            <div class="contentTile">
+                <div class="mainTile">
+                    <p id="tickTile">#</p>
+                    <a id="tile" href="post.html">MỚI NHẤT</a>
+                </div>
+            </div>
+            <div class="row contentVerticalContainer" style="margin-bottom: 50px; margin-top: 20px;">
+                <div class="col-lg-8 col-md-12" id="contentVertical">
+                    <div class="bonusButtonContainer">
+                        <button class="bonusButton" style="outline: none">Xem thêm</button>
+                    </div>
+                </div>
+                <div class="col-lg-4"></div>
+            </div>
+        </div>
     </div>
     <footer id="footer">
     </footer>
 </body>
 <script src="js/home.js"></script>
+<script src="js/category.js"></script>
 <script>
 
 let index = 0
 $('.save').click(()=>{
     if(index == 0){
-        $('.save').html('<i class="fa-solid fa-bookmark" style="color: #5c5959;"></i>')
+        $('.save').html('<i class="fa-solid fa-bookmark" style="color: #4a4747;"></i>')
     }
     else{
         $('.save').html('<i class="fa-regular fa-bookmark"></i>')
@@ -213,7 +230,7 @@ $('.save').click(()=>{
 
 $('.love').click(()=>{
     if(index == 0){
-        $('.love').html('<i class="fa-solid fa-heart" style="color: #5c5959;"></i>')
+        $('.love').html('<i class="fa-solid fa-heart" style="color: #4a4747;"></i>')
     }
     else{
         $('.love').html('<i class="fa-regular fa-heart"></i>')

@@ -1,35 +1,35 @@
 showSearchBox=() => {
-    $('#searchBox').css('display', 'flex');
-    $('#hiddenBox').css('display', 'block');
+    $('#searchBox').css('display', 'flex')
+    $('#hiddenBox').css('display', 'block')
 }
 hiddenSearchBox=() => {
-    $('#searchBox').css('display', 'none');
-    $('#hiddenBox').css('display', 'none');
+    $('#searchBox').css('display', 'none')
+    $('#hiddenBox').css('display', 'none')
 }
 
 showMenuPopup=() => {
-    $('#menuPopupActive').css('display', 'block');
+    $('#menuPopupActive').css('display', 'block')
 }
 hiddenMenuPopup=() => {
-    $('#menuPopupActive').css('display', 'none');
+    $('#menuPopupActive').css('display', 'none')
 }
 
 $( document ).ready(function() {
-    var h1 = $('#articleTopMediumImg1').height();
-    var h2 = $('#articleTopMediumImg2').height();
+    var h1 = $('#articleTopMediumImg1').height()
+    var h2 = $('#articleTopMediumImg2').height()
 
     if (h1 > h2)
-        $('#articleTopMediumImg2').css('height', h1 + "px");
+        $('#articleTopMediumImg2').css('height', h1 + "px")
     else
-        $('#articleTopMediumImg1').css('height', h2 + "px");
+        $('#articleTopMediumImg1').css('height', h2 + "px")
         
-    $('.centerNewsContentSmall').css('height', $('.centerNewsBigImg').height() + $('.centerNewsBigTitle').height() + "px");
-    $('.smallTravel a.image').css('height', $('.bigTravel').height()*0.33 + "px");
+    $('.centerNewsContentSmall').css('height', $('.centerNewsBigImg').height() + $('.centerNewsBigTitle').height() + "px")
+    $('.smallTravel a.image').css('height', $('.bigTravel').height()*0.33 + "px")
     
-    var count=$("#contentVertical > article").length;
-    var h3 = $('#contentVertical > article').height();
-    $('.contentVerticalContainer').css('height', (h3+40)*count + "px");
-});
+    var count=$("#contentVertical > article").length
+    var h3 = $('#contentVertical > article').height()
+    $('.contentVerticalContainer').css('height', (h3+40)*count + "px")
+})
 
 var header = document.getElementById('header')
 header.innerHTML = `<div class="menuContainer">
@@ -45,25 +45,25 @@ header.innerHTML = `<div class="menuContainer">
         <div class="listMenuContainer">
             <ul>
                 <li>                      
-                    <a href="catagory.html">Thời sự</a>
+                    <a href="category.html">Thời sự</a>
                 </li>
                 <li>                      
-                    <a href="catagory.html">Thế giới</a>
+                    <a href="category.html">Thế giới</a>
                 </li>
                 <li>
-                    <a href="catagory.html">Kinh doanh</a>
+                    <a href="category.html">Kinh doanh</a>
                 </li>
                 <li>
-                    <a href="catagory.html">Thể thao</a>
+                    <a href="category.html">Thể thao</a>
                 </li>
                 <li class="techMenu">
-                    <a href="catagory.html">Công nghệ</a>
+                    <a href="category.html">Công nghệ</a>
                 </li>
                 <li>
-                    <a href="catagory.html">Giải trí</a>
+                    <a href="category.html">Giải trí</a>
                 </li>
                 <li>
-                    <a href="catagory.html">Du lịch</a>
+                    <a href="category.html">Du lịch</a>
                 </li>
                 <li class="iconDot" onmouseover="showMenuPopup()">
                     <i class="fas fa-ellipsis-h" style="font-size: 22px;"></i>

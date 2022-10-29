@@ -190,6 +190,7 @@
                 </a>
             </div>
         </div>
+    
         <div class="newNews">
             <div class="contentTile">
                 <div class="mainTile">
@@ -214,33 +215,33 @@
 <script src="js/category.js"></script>
 <script>
 
-let index = 0
+let indexSave = 0
 $('.save').click(()=>{
-    if(index == 0){
-        $('.save').html('<i class="fa-solid fa-bookmark" style="color: #4a4747;"></i>')
+    if(indexSave == 0){
+        $('.save').html('<i class="fa-solid fa-bookmark" style="color: #d6493c;"></i>')
     }
     else{
         $('.save').html('<i class="fa-regular fa-bookmark"></i>')
     }
-    index++
-    if(index > 1){
-        index = 0
+    indexSave++
+    if(indexSave > 1){
+        indexSave = 0
     }
 })
 
+let indexLove = 0
+
 $('.love').click(()=>{
-    if(index == 0){
-        $('.love').html('<i class="fa-solid fa-heart" style="color: #4a4747;"></i>')
+    if(indexLove == 0){
+        $('.love').html('<i class="fa-solid fa-heart" style="color: #d6493c;"></i>')
     }
     else{
         $('.love').html('<i class="fa-regular fa-heart"></i>')
     }
-    index++
-    if(index > 1){
-        index = 0
+    indexLove++
+    if(indexLove > 1){
+        indexLove = 0
     }
 })
-
-console.log(index)
 </script>
 </html>

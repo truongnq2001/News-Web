@@ -276,6 +276,57 @@ input:focus{
 
 .mainBody{
     max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tagHot{
+    display: flex;
+    float: left;
+    margin-top: 75px;
+    margin-left: 0px;
+    margin-bottom: 2px;
+    width: 100%;
+}
+
+.tagHot i{
+    font-size: 23px;
+    color: #c00000;
+    margin-top: 3px;
+    margin-right: 10px;
+    margin-left: 0px;
+}
+
+.tagHot a{
+    font-weight: 100;
+    margin: 0px 5px;
+    background: #ededed;
+    border-radius: 15px;
+    padding: 5px 12px;
+    color: #797676;
+    font-size: 13px;
+}
+
+.tagHot a:hover{
+    color: white;
+    background: #d6493c;
+}
+
+.tagHot p.city{
+    margin-right: 7px;
+    font-weight: 600;
+}
+
+.tagHot p{
+    margin-top: 4px;
+    margin-bottom: 0px;
+    font-size: 15px;
+    color: #5c5959;
+}
+
+.weather{
+    margin-right: 0px;
+    display: flex;
 }
 
 .topNews a{

@@ -21,8 +21,20 @@
     <header id="header">
     </header>
     <div class="mainBody">
+        <div class="tagHot">
+            <i class="fa-solid fa-chart-column"></i>
+            <a>#Quý tồi tệ của Google</a>
+            <a>#bongda</a>
+            <a>#iphone14</a>
+            <a>#blockchain</a>
+            <div class="weather">
+                <p class="city">Hà Nội</p>
+                <p>20°C / 19 - 26°C</p>
+                <i class="fa-solid fa-temperature-low" style="margin-left: 15px;"></i>
+            </div>
+        </div>
         <div class="topNews">
-            <div class="row" style="padding-top: 75px; margin: 0 auto; height: 590px;">
+            <div class="row" style="margin: 0 auto; margin-bottom: 10px;">
                 <div class="col-lg-9 col-md-8 col-sm-12 row CenterLeftContainer" style="margin-top: 10px; padding-right: 0px;">
                     <div class="col-lg-4 col-md-4 col-sm-12 row" id="contentLeftContainer">
                         <article class="contentLeft contentLeftFirst">
@@ -38,7 +50,7 @@
                             <a class="title" href="post.html">Phản ứng của Allegri khi Juve bị loại khỏi Champions League</a>
                         </article>
                     </div>
-                    <div class="col-lg-8 col-md-8 col-sm-12">
+                    <div class="col-lg-8 col-md-8 col-sm-12 centerContainer" style="margin-right: 5px;">
    
                     </div>
                 </div>
@@ -602,6 +614,15 @@ $( document ).ready(function() {
     $('.newsArticleMedium > a.image').css('height', $('.newsMedium').height()*0.3 + "px")
     $('.contentLeft >  a.image').css('height', $('.newsMedium').height()*0.33 + "px")
     $('.lastNewsBig').css('height', $('.lastNewsBig >  a.image').height() + $('.lastNewsBig >  a.title').height() + "px")
+    $('#contentLeftContainer').css('height', $('.contentLeftFirst').height() + $('.contentLeftLast').height() + "px")
+    $('.centerContainer').css('height', $('.contentCenter').height() + "px")
+    if ($('.centerContainer').height() >= $('#contentLeftContainer').height){
+        $('.CenterLeftContainer').css('height', $('.centerContainer').height() + "px")
+    }
+    else{
+        $('.CenterLeftContainer').css('height', $('#contentLeftContainer').height() + "px")
+    }
+    $('#contentRight').css('height', $('.CenterLeftContainer').height() + "px")
 })
 
 const articleCenter = [

@@ -38,14 +38,17 @@ img{
 
 .logo{
     margin-top: 8px;
-    width: 165px;
     margin-left: 0px;
 }
 
+.logo a{
+    width: max-content;
+    margin: 0px;
+}
+
 .menu img{
-    width: 75%;
+    width: 123.75px;
     margin-top: 4px;
-    float: left;
 }
 
 .menu ul{
@@ -98,7 +101,7 @@ img{
 
 .listMenuContainer{
     margin-right: 120px;
-    margin-left: 100px;
+    margin-left: 143px;
 }
 
 .toolBox{
@@ -135,39 +138,6 @@ input:focus{
     margin-top: 25px;
 }
 
-@media screen and (max-width: 1100px) {
-    .logo{
-        text-align: center;
-    }
-    #toggle {
-        display: block;
-        position: absolute;
-        left: 8%;
-    }
-    .menu ul {
-        display: none;
-    }
-
-    .menuContainer{
-        width: 100%;
-    }
-
-    .logo{
-        position: absolute;
-        left: 40%;
-    }
-
-    .searchForm{
-        position: absolute;
-        left: 87%;
-    }
-
-    .menu{
-        width: 100%;
-    }
-    
-}
-
 .showBox{
     cursor: pointer;
 }
@@ -175,8 +145,8 @@ input:focus{
 #searchBox{
     display: none;
     position: absolute;
-    right: 49px;
-    bottom: 17px;
+    right: 48px;
+    bottom: 11px;
 }
 
 #searchBox{
@@ -327,6 +297,12 @@ input:focus{
 .weather{
     margin-right: 0px;
     display: flex;
+}
+
+@media screen and (max-width: 720px) {
+    .tagHot{
+        display: none;
+    }
 }
 
 .topNews a{
@@ -486,56 +462,8 @@ div.contentRightList:hover a{
     border-color: #efebeb;
 }
 
-@media screen and (max-width: 720px) {
-    .CenterLeftContainer{
-        flex-direction: column-reverse;
-        display: flex;
-        width: max-content;
-    }
-
-    .contentCenter{
-        padding-right: 30px;
-        margin-bottom: 25px;
-    }
-
-    .contentCenter p{
-        display: none;
-    }
-
-    .contentCenter a.image{
-        height: 200px;
-    }
+@media only screen and (max-width: 740px) and (max-width: 1024px) {
     
-    #contentLeftContainer{
-        padding-left: 30px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-    }
-
-    .contentLeftFirst{
-        margin-right: 20px;
-    }
-
-    .contentLeft{
-        width: 50%;
-        height: max-content;
-    }
-
-    .contentLeft a.title{
-        margin-left: 7px;
-        font-size: 16px;
-    }
-
-    #contentRight{
-        margin-left: 0px;
-        padding-left: 5px;
-    }
-
-    .contentRightList a.title {
-        width: 100%;
-        font-size: 16px;
-    }
 }
 
 /*Carousel*/
@@ -629,7 +557,7 @@ div.contentRightList:hover a{
     margin: 0;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (width: 1100px) {
     .mainBody{
         margin: 0px 20px;
     }
@@ -1199,10 +1127,13 @@ div.contentRightList:hover a{
 
 .bigTravel img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .bigTravel a.image{
     width: 100%;
+    height: 350px;
 }
 
 .smallTravelContainer{
@@ -1380,6 +1311,457 @@ div.contentRightList:hover a{
     color: #393838;
 }
 
+/*Responsive Mobile*/
+
+@media only screen and (max-width: 740px) {
+    /*Menu*/
+    .menuContainer{
+        width: 100%;
+        position: absolute;
+    }
+    .logo{
+        text-align: center;
+    }
+    #toggle {
+        display: block;
+        position: absolute;
+        left: 5%;
+        font-size: 27px !important;
+        margin-top: 13px !important;
+    }
+    .menu ul {
+        display: none;
+    }
+
+    .menuContainer{
+        width: 100%;
+    }
+
+    .logo{
+        position: relative;
+        left: 37%;
+    }
+
+    .toolBox{
+        right: 5%;
+        position: absolute;
+    }
+
+    .searchForm{
+        display: none;
+    }
+
+    .menu{
+        width: 100%;
+    }
+    /*Body*/
+    .topNews{
+        flex-direction: column;
+        padding-top: 60px;
+        margin-bottom: 0px !important;
+    }
+    .CenterLeftContainer{
+        height: max-content !important;
+        flex-direction: column-reverse;
+        padding: 0;
+        margin: 0;
+    }
+    .centerContainer{
+        margin: 0px 0px 20px 0px;
+        padding: 0px 15px !important;
+    }
+    .centerContainer a.image{
+        height: 250px;
+    }
+    .centerContainer p{
+        display: none;
+    }
+    #contentLeftContainer{
+        padding: 0px 15px !important;
+        margin: 0;
+        height: max-content !important;
+    }
+    .contentLeft{
+        display: flex;
+        margin-bottom: 20px !important;
+    }
+    .contentLeft a.image{
+        height: 97px !important;
+        width: 145px;
+    }
+    .contentLeft a.title{
+        width: 59%;
+        margin-left: 10px;
+    }
+    .contentLeft a{
+        margin: 0;
+    }
+    #contentRight{
+        height: max-content !important;
+        margin: 0px;
+        padding: 0px 15px !important;
+    }
+    .contentRightList{
+        margin: 0px 0px 20px 0px !important;
+        border: none;
+        padding: 0 !important;
+    }
+    .contentRightList a.image{
+        height: 97px !important;
+        width: 145px;
+        margin: 0 !important;
+    }
+    .contentRightList a.title{
+        width: 59%;
+        font-size: 16px;
+    }
+
+    .mainTile{
+        margin-left: 8px;
+    }
+
+    .mainTile p{
+        display: none;
+    }
+    .contentTile a#tile{
+        color: #c00000 !important;
+    }
+
+    /*News*/
+    .newsContainer{
+        flex-direction: column;
+        height: max-content !important;
+        width: 100%;
+        margin: 0;
+    }
+
+    .newsContainer .contentArticle p{
+        display: none;
+    }
+
+    #carouselExampleCaptions{
+        padding: 0px 15px !important;
+        margin: 0 !important;
+    }
+
+    .carouselArticle{
+        height: 310px;
+    }
+
+    .d-block{
+        height: 215px
+    }
+
+    .carouselArticle a.title{
+        font-size: 18px;
+    }
+
+    .carousel-item img{
+        height: 100% !important;
+    }
+
+    .newsMedium{
+        display: flex !important;
+        height: max-content;
+        padding: 0px 15px !important;
+    }
+
+    .articleMarginRight{
+        margin-right: 15px;
+    }
+
+    .newsArticleMedium a.image{
+        height: 125px !important;
+    }
+    .newsVertical {
+        padding: 0px 15px;
+    }
+    .newsArticleVertical{
+        border: none;
+        padding: 0 !important;
+        margin-bottom: 20px !important;
+    }
+    .newsArticleVertical a.title{
+        font-size: 16px !important;
+        width: 59% !important;
+    }
+
+    .newsArticleVertical a.image{
+        height: 97px !important;
+        width: 145px;
+        margin: 0 !important;
+    }
+    .news{
+        margin-bottom: 0px !important;
+    }
+
+    /*World*/
+
+    .contentWorldMain{
+        flex-wrap: wrap;
+        padding: 0px 15px;
+        width: 100%;
+        margin: 0;
+    }
+    #contentWorldMainList{
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        width: 47.35%;
+        height: max-content;
+        margin: 0px 0px 20px 0px;
+    }
+    #contentWorldMainList a.image{
+        width: 100%;
+        height: 110px;
+    }
+    .articleWorldOdd{
+        margin-right: 5.3% !important;
+    }
+    .contentVerticalContainer{
+        display: none;
+    }
+    /*Sport*/
+    #contentBig{
+        padding: 0px;
+    }
+    #contentBig p {
+        display: none;
+    }
+    #contentBig ul {
+        display: none;
+    }
+    .contentSportContainer{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .articleBig{
+        height: max-content !important;
+        padding: 0px 15px !important;
+    }
+    .articleBig a.title{
+        margin-bottom: 20px;
+    }
+    .articleBig a.image{
+        height: 250px;
+    }
+    #articleListMedium{
+        display: flex !important;
+        height: max-content;
+        padding: 0px 15px !important;
+    }
+    .articleMedium{
+        height: max-content !important;
+        width: 48% !important;
+    }
+    .articleMedium a.image{
+        height: 125px !important;
+    }
+    #articleListSmall {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px 15px !important;
+    }
+    .articleSmall{
+        display: flex;
+        width: 47.35%;
+        height: max-content;
+        flex-direction: column-reverse;
+        margin-left: 0 !important;
+        padding: 0px;
+        border: none;
+        margin-top: 20px !important;
+    }
+
+    .articleWorldEven{
+        margin-right: 0 !important;
+    }
+
+    .articleSmall a.image{
+        width: 100% !important;
+        height: 125px !important;
+    }
+    .articleSmall img{
+        height: 100% !important;
+    }
+    .articleSmall a.title{
+        margin-top: 10px !important;
+        font-size: 16px !important;
+    }
+    .articleSmallLast{
+        display: none;
+    }
+    .sportNews {
+        margin-bottom: 0px !important;
+    }
+    /*Travel*/
+    .travelContainer{
+        width: 100%;
+        margin: 0;
+    }
+    .bigTravel{
+        padding: 0px 15px;
+    }
+    .bigTravel a.image{
+        height: 250px;
+    }
+    .smallTravelContainer{
+        display: flex;
+        padding: 0px 15px !important;
+    }
+    .smallTravel {
+        width: 48%;
+    }
+    .smallTravel a.image {
+        height: 125px !important;
+    }
+    /*Entertainment*/
+    #entertainmentNews {
+        padding: 0 !important;
+    }
+    #entertainmentNews .mainTile{
+        margin-top: 10px;
+    }
+    #entertainmentNewsContainer {
+        width: 100%;
+        margin: 0;
+    }
+    #entertainmentNewsLeft{
+        height: max-content;
+        padding: 0px;
+    }
+    .articleEntertainmentBig{
+        height: max-content !important;
+        padding: 0px 15px !important;
+        margin-bottom: 20px;
+    }
+    #listArticleEntertainment{
+        display: none;
+    }
+    #entertainmentNewsLeft a.image {
+        height: 250px;
+    }
+    #entertainmentNewsRight{
+        padding: 0px 15px 0px 15px !important;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .articleEntertainment{
+        flex-direction: column;
+        height: max-content;
+        width: 47.35%;
+        margin-left: 0px !important;
+        margin-bottom: 20px !important;
+    }
+    .articleEntertainment a.image{
+        width: 100%;
+        height: 125px !important;
+    }
+    .articleEntertainment img{
+        padding: 0 !important;
+    }
+    .articleEntertainment a.title{
+        margin-top: 10px !important;
+        font-size: 16px;
+        width: 100%;
+    }
+    /*Tech*/
+    #techNews{
+        padding: 0;
+    }
+    #techNews .mainTile{
+        margin-top: 10px;
+    }
+    .techNewsBig{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .techNewsMedium{
+        padding: 0px 15px;
+        height: max-content;
+    }
+    .articleTech{
+        margin-bottom: 20px;
+    }
+    .articleTech a.image {
+        width: 55% !important;
+        height: 97px !important;
+    }
+    .articleTech img {
+        padding-right: 0px !important;
+    }
+    .articleTech a.title {
+        margin-left: 10px;
+        font-size: 16px;
+    }
+    .EnterTech{
+        margin-bottom: 0px !important;
+        width: 100%;
+        margin: 0 auto;
+    }
+    /*Car*/
+    #societyNews {
+        padding: 0px !important;
+    }
+    #societyNews .mainTile{
+        margin-top: 10px;
+    }
+    .lastNewsBig {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    .lastNewsBig a.title{
+        margin-bottom: 20px !important;
+    }
+    .lastNewsMedium{
+        padding: 0px 15px
+    }
+    .articleLast a.image{
+        height: 97px;
+        width: 80%;
+    }
+    .articleLast a.title{
+        font-size: 16px;
+    }
+    /*Business*/
+    #businessNews{
+        padding: 0px !important;
+    }
+    #businessNews .mainTile{
+        margin-top: 10px;
+    }
+    /*Life*/
+    #lifeNews{
+        padding: 0px !important;
+    }
+    #lifeNews .mainTile{
+        margin-top: 10px;
+    }
+    .lastCategory{
+        width: 100%;
+        margin: 0 auto;
+    }
+    /*Footer*/
+    #footerLeft {
+        padding: 0px 15px !important;
+    }
+    #footerRight {
+        padding: 2px 15px !important;
+        margin-bottom: 30px !important;
+    }
+    .textNoResponsive{
+        display: none;
+    }
+    .textResponsive{
+        display: block;
+    }
+    .logoFooter{
+        left: 0;
+        width: 100px !important;
+    }
+    #footerLeft img{
+        width: 100%;
+    }
+}
 
 
 

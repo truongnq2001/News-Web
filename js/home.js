@@ -35,7 +35,7 @@ var header = document.getElementById('header')
 header.innerHTML = `<div class="menuContainer">
     <div class="menu">
         <div id="toggle">
-            <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+            <i class="fa-solid fa-bars"></i>
         </div>
         <div class="logo">
             <a href="home.html">
@@ -194,14 +194,14 @@ header.innerHTML = `<div class="menuContainer">
 var footer = document.getElementById('footer')
 footer.innerHTML = `<div class="row" id="footerContainer">
 <div class="col-lg-5" id="footerLeft">
-    <div class="logo">
+    <div class="logo logoFooter" style="width: 165px;">
         <img src="img/logo.png">
     </div>
     <div class="footerLeftWord">
         <p>BEST news là trang tin tức trực tuyến hàng đầu Việt Nam</p>
         <p>Giấy phép báo chí: số XYZ</p>
         <p>Phụ trách nội dung: Công ty TNHH BEST news</p>
-        <p>© Toàn bộ bản quyền thuộc BEST news</p>     
+        <p class="textNoResponsive">© Toàn bộ bản quyền thuộc BEST news</p>     
     </div>          
 </div>
 <div class="col-lg-1">
@@ -217,6 +217,7 @@ footer.innerHTML = `<div class="row" id="footerContainer">
             <p>|</p> 
             <a href="">Quảng cáo</a>  
         </div>
+        <p class="textResponsive">© Toàn bộ bản quyền thuộc BEST news</p>  
     </div>         
 
 </div>

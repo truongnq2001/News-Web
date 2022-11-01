@@ -31,17 +31,88 @@ $( document ).ready(function() {
     $('.contentVerticalContainer').css('height', (h3+40)*count + "px")
 })
 
+$('toggle').click(function(){
+    $('listMenuContainer').css('display','block')
+})
+
+/* 
+<div id="toggle">
+    <i class="fa-solid fa-bars"></i>
+</div>
+*/ 
+
+
 var header = document.getElementById('header')
 header.innerHTML = `<div class="menuContainer">
     <div class="menu">
-        <div id="toggle">
-            <i class="fa-solid fa-bars"></i>
+       
+        <div id="menuToggle">
+            <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+            <ul id="menuMobile">
+                <li>
+                    <a href="category.html">THỜI SỰ</a>
+                    <div class="smallCategory"> 
+                        <a href="category.html">XÃ HỘI</a>
+                        <a href="category.html">CHÍNH TRỊ</a>
+                        <a href="category.html">ĐÔ THỊ</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="category.html">THẾ GIỚI</a>
+                    <div class="smallCategory"> 
+                        <a href="category.html">TƯ LIỆU</a>
+                        <a href="category.html">PHÂN TÍCH</a>
+                        <a href="category.html">TẦM NHÌN</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="category.html">KINH DOANH</a>
+                    <div class="smallCategory"> 
+                        <a href="category.html">BĐS</a>
+                        <a href="category.html">KINH TẾ SỐ</a>
+                        <a href="category.html">CHỨNG KHOÁN</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="category.html">THỂ THAO</a>
+                    <div class="smallCategory"> 
+                        <a href="category.html">BÓNG ĐÁ VIỆT NAM</a>
+                        <a href="category.html">BÓNG ĐÁ QUỐC TẾ</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="category.html">CÔNG NGHỆ</a>
+                    <div class="smallCategory"> 
+                        <a href="category.html">BLOCKCHAIN</a>
+                        <a href="category.html">MOBILE</a>
+                        <a href="category.html">LAPTOP</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="category.html">GIẢI TRÍ</a>
+                    <div class="smallCategory"> 
+                        <a href="category.html">ÂM NHẠC</a>
+                        <a href="category.html">PHIM ẢNH</a>
+                        <a href="category.html">THỜI TRANG</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="category.html">DU LỊCH</a>
+                    <div class="smallCategory"> 
+                        <a href="category.html">ĐIỂM ĐẾN</a>
+                        <a href="category.html">ẨM THỰC</a>
+                    </div>
+                </li>
+            </ul>
         </div>
         <div class="logo">
             <a href="home.html">
                 <img src="img/logo.png">
             </a>
-        </div>
+        </div>              
         <div class="listMenuContainer">
             <ul>
                 <li>                      

@@ -27,6 +27,10 @@ img{
     width: 1100px;
 }
 
+#menuToggle{
+    display: none;
+}
+
 .menu{
     width: 100%;
     display: inline-flex;
@@ -1034,7 +1038,7 @@ div.contentRightList:hover a{
 }
 
 #listArticleEntertainment ul{
-    padding-left: 14px;
+    padding-left: 16px;
     margin-top: 10px;
 }
 
@@ -1317,10 +1321,13 @@ div.contentRightList:hover a{
     /*Menu*/
     .menuContainer{
         width: 100%;
-        position: absolute;
+        position: fixed;
     }
     .logo{
         text-align: center;
+    }
+    .menu .logo{
+        margin-top: 10px;
     }
     #toggle {
         display: block;
@@ -1329,17 +1336,18 @@ div.contentRightList:hover a{
         font-size: 27px !important;
         margin-top: 13px !important;
     }
-    .menu ul {
+    .listMenuContainer ul {
         display: none;
     }
 
     .menuContainer{
         width: 100%;
+        display: flex;
     }
 
     .logo{
         position: relative;
-        left: 37%;
+        left: 30%;
     }
 
     .toolBox{
@@ -1741,12 +1749,14 @@ div.contentRightList:hover a{
         margin: 0 auto;
     }
     /*Footer*/
+    #footer{
+        height: max-content;
+    }
     #footerLeft {
         padding: 0px 15px !important;
     }
     #footerRight {
-        padding: 2px 15px !important;
-        margin-bottom: 30px !important;
+        padding: 2px 15px 30px 15px !important;
     }
     .textNoResponsive{
         display: none;
@@ -1761,7 +1771,126 @@ div.contentRightList:hover a{
     #footerLeft img{
         width: 100%;
     }
+
+    /* Menu Mobile*/
+    #menuToggle {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 25px;
+        left: 25px;
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+    
+    #menuToggle input
+    {
+        display: flex;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 2;
+    }
+    
+    #menuToggle span
+    {
+        display: flex;
+        width: 29px;
+        height: 2px;
+        margin-bottom: 5px;
+        position: relative;
+        background: #5c5959;
+        border-radius: 3px;
+        z-index: 1;
+        transform-origin: 5px 0px;
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    opacity 0.55s ease;
+    }
+    
+    #menuToggle span:first-child
+    {
+        transform-origin: 0% 0%;
+    }
+    
+    #menuToggle span:nth-last-child(2)
+    {
+        transform-origin: 0% 100%;
+    }
+    
+    #menuToggle input:checked ~ span
+    {
+        opacity: 1;
+        transform: rotate(45deg) translate(-3px, -1px);
+        background: #36383F;
+    }
+    #menuToggle input:checked ~ span:nth-last-child(3)
+    {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    
+    #menuToggle input:checked ~ span:nth-last-child(2)
+    {
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+    
+    #menuMobile
+    {
+        position: absolute;
+        width: 103vw;
+        height: 102vh;
+        margin: -50px 0 0 -50px;
+        padding: 15px 10px 0px 50px;
+        
+        background-color: #ffffff;
+        -webkit-font-smoothing: antialiased;
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+    
+    #menuMobile li
+    {
+        padding: 10px 0;
+        transition-delay: 2s;
+        height: max-content;
+        margin: 0 !important;
+    }
+
+    #menuMobile li a
+    {
+        font-size: 18px;
+    }
+    .smallCategory{
+        display: flex;
+    }
+    .smallCategory a{
+        font-size: 15px !important;
+        font-weight: 100 !important;
+        height: max-content !important;
+        margin: 0px 10px !important;
+    }
+
+    .smallCategory a:first-child{
+        margin-left: 0px;
+    }
+
+    #menuMobile 
+    {
+        display: block !important;
+        margin-top: 40px;
+    }
+    
+    #menuToggle input:checked ~ ul
+    {
+        transform: none;
+    }
 }
+ 
 
 
 

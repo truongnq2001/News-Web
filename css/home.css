@@ -821,7 +821,7 @@ div.contentRightList:hover a{
 }
 
 .listArticle ul{
-    padding-left: 14px;
+    padding-left: 16px;
     margin-top: 10px;
 }
 
@@ -1873,7 +1873,7 @@ div.contentRightList:hover a{
         font-weight: 100 !important;
         height: max-content !important;
         margin: 0px 10px !important;
-        color: #424141 !important;
+        color: #2e2d2d !important;
     }
 
     .smallCategory a:first-child{

@@ -53,7 +53,7 @@ header.innerHTML = `<div class="menuContainer">
                 <span></span>
             <ul id="menuMobile">
                 <li>
-                    <a href="category.html">THỜI SỰ</a>
+                    <a class="bigCategory" href="category.html">THỜI SỰ</a>
                     <div class="smallCategory"> 
                         <a href="category.html">XÃ HỘI</a>
                         <a href="category.html">CHÍNH TRỊ</a>

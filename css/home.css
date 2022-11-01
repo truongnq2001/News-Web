@@ -1873,6 +1873,7 @@ div.contentRightList:hover a{
         font-weight: 100 !important;
         height: max-content !important;
         margin: 0px 10px !important;
+        color: #424141 !important;
     }
 
     .smallCategory a:first-child{
@@ -1889,6 +1890,18 @@ div.contentRightList:hover a{
     {
         transform: none;
     }
+
+    .menu li:hover{
+        border: none !important;
+    }
+
+    .menu li a:hover {
+        color: #424141 !important;
+    }
+    .menu li:hover a{
+        color: #424141; 
+    }
+
 }
  
 

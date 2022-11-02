@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel="stylesheet" href="css/category.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <title>Bestnews</title>
 </head>
@@ -39,59 +42,70 @@
                 </li>
             </ul>
         </div>
-        <div class="topNews">
-            <div class="row">
+        <div class="btn-group dropdownHeader">
+            <a href="" style="text-decoration: none;">Công nghệ</a>
+            <button type="button" class="btnHeader btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Blockchain</a>
+              <a class="dropdown-item" href="#">Mobile</a>
+              <a class="dropdown-item" href="#">Laptop</a>
+              <a class="dropdown-item" href="#">Internet</a>
+            </div>
+          </div>
+        <div class="topNews topCategoryNews">
+            <div class="row topCategory">
                 <div class="col-lg-8 col-md-7" id="articleTopBig">
                     <article class="articleTopBig" id="articleTop">
                         <a class="image" href="post.html">
                             <img src="img/loi-nhuan-cty-me-gg.jpg">
                         </a>
-                        <a href="post.html">Lợi nhuận công ty mẹ của Google giảm 27%</a>
+                        <a class="title" href="post.html">Lợi nhuận công ty mẹ của Google giảm 27%</a>
                         <p>Tăng trưởng doanh thu của tập đoàn đang có dấu hiệu chững lại. Doanh thu quảng cáo cũng không mấy khả quan do sự sụt giảm trong chi tiêu của người dùng và sự cạnh tranh của TikTok.</p>
                     </article>
                 </div>
                 <div class="col-lg-4 col-md-5" id="articleMediumContainer">
-                    <article class="articleTopMedium" id="articleTop" style="margin-bottom: 25px;">
+                    <article class="articleTopMedium articleWorldOdd" id="articleTop" style="margin-bottom: 25px;">
                         <a class="image" id="articleTopMediumImg1" href="post.html">
                             <img src="img/5-ty-smp-bien-thanh-rac.jpg">
                         </a>
-                        <a href="post.html" class="articleMediumBot">5 tỷ smartphone sẽ biến thành 'rác' trong năm nay</a>
+                        <a class="title" href="post.html" class="articleMediumBot">5 tỷ smartphone sẽ biến thành 'rác' trong năm nay</a>
                     </article>
                     <article class="articleTopMedium" id="articleTop">
                         <a class="image" id="articleTopMediumImg2" href="post.html">
                             <img src="img/doanh-nghiep-tq-livestream-tim-ng-lam.jpg">
                         </a>
-                        <a href="post.html">Doanh nghiệp Trung Quốc livestream để tìm người làm</a>
+                        <a class="title" href="post.html">Doanh nghiệp Trung Quốc livestream để tìm người làm</a>
                        
                     </article>
                 </div>
             </div>
         </div>
-        <div class="topNewsList">
-            <div class="row">
+        <div class="topNewsList topCategoryList">
+            <div class="row categoryListContainer">
                 <div class="col-lg-3 col-md-3 col-sm-6" id="articleTopItem">
                     <a class="image" href="post.html">
                         <img src="img/youtube-tinh-toan.jpg">
                     </a>
-                    <a href="post.html">YouTube tính toán gì khi ép người dùng xem 10 quảng cáo liên tục</a>
+                    <a class="title" href="post.html">YouTube tính toán gì khi ép người dùng xem 10 quảng cáo liên tục</a>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6" id="articleTopItem">
                     <a class="image" href="post.html">
                         <img src="img/thegioididong-giam-den.jpg">
                     </a>
-                    <a href="post.html">Thế Giới Di Động giảm đến 50% cho khách mua laptop Acer</a>
+                    <a class="title" href="post.html">Thế Giới Di Động giảm đến 50% cho khách mua laptop Acer</a>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6" id="articleTopItem">
                     <a class="image" href="post.html">
                         <img src="img/the-merg-se-thay-doi.jpg">
                     </a>
-                    <a href="post.html">The Merge sẽ thay đổi Ethereum như thế nào</a>
+                    <a class="title" href="post.html">The Merge sẽ thay đổi Ethereum như thế nào</a>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6" id="articleTopItem">
                     <a class="image" href="post.html">
                         <img src="img/congty-dao-etheruem-ngat-may-chu.jpg">
                     </a>
-                    <a href="post.html">Công ty đào Ethereum lớn nhất thế giới ngắt máy chủ</a>
+                    <a class="title" href="post.html">Công ty đào Ethereum lớn nhất thế giới ngắt máy chủ</a>
                 </div>
             </div>
         </div>
@@ -276,13 +290,13 @@
                     <a id="tile" href="">MỚI NHẤT</a>
                 </div>
             </div>
-            <div class="row contentVerticalContainer" style="margin-bottom: 50px; margin-top: 20px;">
+            <div class="row contentVerticalContainer contentVerticalCategory" style="margin-bottom: 50px; margin-top: 20px;">
                 <div class="col-lg-8 col-md-12" id="contentVertical">
                     <div class="bonusButtonContainer">
                         <button class="bonusButton" style="outline: none">Xem thêm</button>
                     </div>
                 </div>
-                <aside class="col-lg-4" id="sidebarContainer">
+                <aside class="col-lg-4 categoryNewsSidebar" id="sidebarContainer">
                     <div id="sidebar">
                         <h2 class="category">Nổi bật</h2>
                         <article class="articleSidebar">

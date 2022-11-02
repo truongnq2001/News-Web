@@ -273,3 +273,162 @@
 .articleSidebar{
     float: left;
 }
+.dropdownHeader{
+    display: none;
+}
+
+/*Responsive Mobile*/
+@media only screen and (max-width: 740px) {
+    .categoryHeader{
+        display: none;
+    }
+    .dropdownHeader{
+        display: flex;
+        margin-top: 85px;
+        margin-left: 0px !important;
+        padding-left: 15px !important;
+    }
+    .dropdownHeader a{
+        font-size: 24px;
+        color: #c00000;
+        margin-bottom: 2px;
+    }
+    .topCategoryNews{
+        padding: 0;
+        margin: 0;
+    }
+    .btnHeader{
+        background: white !important;
+        color: #5c5959 !important;
+        border: none !important;
+        font-size: 20px;
+    }
+    .btnHeader:focus {
+        box-shadow: none !important;
+    }
+    .dropdownHeader .dropdown-item{
+        font-size: 16px;
+        color: white !important;
+    }
+    .dropdownHeader .dropdown-menu{
+        background: #2e2d2df2;
+    }
+    #articleTopBig{
+        padding: 0px;
+        width: 100%;
+    }
+    .articleTopBig{
+        display: block;
+        padding: 0px 15px !important;
+        margin-bottom: 5px;
+    }
+    .topCategory{
+        width: 100%;
+        margin: 0px;
+    }
+    .articleTopBig p{
+        display: none;
+    }
+    .articleTopBig a.image {
+        height: 235px !important;
+    }
+    .articleTopBig a.title {
+        font-size: 22px;
+    }
+    #articleMediumContainer{
+        padding: 0px 15px !important;
+        display: flex;
+    }
+    .articleTopMedium{
+        width: 48% !important;
+    }
+    .articleTopMedium a.image{
+        height: 30vw !important;
+    }
+    .articleTopMedium a.title{
+        font-size: 16px !important;
+    }
+    .topCategoryList{
+        margin: 0px;
+    }
+    .categoryListContainer{
+        padding: 0px 15px !important;
+        width: 100%;
+        margin: 0 !important;
+    }
+    .topCategoryList #articleTopItem{
+        display: flex;
+        margin-bottom: 20px !important;
+        padding: 0 !important;
+    }
+    .topCategoryList #articleTopItem a.image{
+        height: 97px !important;
+        width: 145px;
+        margin: 0 !important;
+    }
+    .topCategoryList #articleTopItem img{
+        height: 100% !important;
+        margin: 0px !important;
+    }
+    .topCategoryList #articleTopItem a.title{
+        width: 59%;
+        margin-left: 10px;
+    }
+    .blockchainNews{
+        display: none;
+    }
+    .mobileNews{
+        display: none;
+    }
+    .laptopNews{
+        display: none;
+    }
+    .internetNews{
+        display: none;
+    }
+    .categoryNewsSidebar{
+        display: none;
+    }
+    .contentVerticalCategory{
+        display: block !important;
+        height: max-content !important;
+        width: 100%;
+        margin: 0;
+        margin-top: 0px !important;
+    }
+    .newNews{
+        height: max-content;
+    }
+    .newNews .contentTile{
+        display: none;
+    }
+    .contentVerticalCategory .articleVertical p{
+        display: none;
+    }
+    .contentVerticalCategory .articleVertical{
+        height: max-content;
+        margin: 0px 0px 20px 0px !important;
+        padding: 0px !important;
+        border: none !important;
+    }
+    .contentVerticalCategory #contentVertical{
+        padding: 0px 15px !important;
+    }
+    .contentVerticalCategory .articleVertical a.image{
+        height: 97px !important;
+        width: 145px;
+        margin: 0 !important;
+    }
+    .contentVerticalCategory .articleContent{
+        width: 59%;
+        margin-left: 10px
+    }
+    .contentVerticalCategory .articleContent a{
+        padding: 0 !important;
+        margin: 0 !important;
+        font-size: 16px !important;
+    }
+    .bonusButtonContainer{
+        margin-top: 30px;
+    }
+}

@@ -1375,11 +1375,11 @@ div.contentRightList:hover a{
         margin: 0;
     }
     .centerContainer{
-        margin: 0px 0px 20px 0px;
+        margin: 0px 0px 10px 0px;
         padding: 0px 15px !important;
     }
     .centerContainer a.image{
-        height: 235px;
+        height: 60vw;
     }
     .centerContainer p{
         display: none;
@@ -1394,8 +1394,8 @@ div.contentRightList:hover a{
         margin-bottom: 20px !important;
     }
     .contentLeft a.image{
-        height: 97px !important;
-        width: 145px;
+        height: 26vw!important;
+        width: 39vw;
     }
     .contentLeft a.title{
         width: 59%;
@@ -1415,13 +1415,17 @@ div.contentRightList:hover a{
         padding: 0 !important;
     }
     .contentRightList a.image{
-        height: 97px !important;
-        width: 145px;
+        height: 26vw!important;
+        width: 39vw;
         margin: 0 !important;
     }
     .contentRightList a.title{
         width: 59%;
         font-size: 16px;
+    }
+
+    .centerContainer{
+        height: max-content !important;
     }
 
     .mainTile{
@@ -1453,11 +1457,11 @@ div.contentRightList:hover a{
     }
 
     .carouselArticle{
-        height: 310px;
+        height: 82vw;
     }
 
     .d-block{
-        height: 215px
+        height: 60vw;
     }
 
     .carouselArticle a.title{
@@ -1495,8 +1499,8 @@ div.contentRightList:hover a{
     }
 
     .newsArticleVertical a.image{
-        height: 97px !important;
-        width: 145px;
+        height: 26vw!important;
+        width: 39vw;
         margin: 0 !important;
     }
     .news{
@@ -1550,7 +1554,7 @@ div.contentRightList:hover a{
         margin-bottom: 20px;
     }
     .articleBig a.image{
-        height: 250px;
+        height: 60vw;
     }
     #articleListMedium{
         display: flex !important;
@@ -1610,7 +1614,7 @@ div.contentRightList:hover a{
         padding: 0px 15px;
     }
     .bigTravel a.image{
-        height: 250px;
+        height: 60vw;
     }
     .smallTravelContainer{
         display: flex;
@@ -1646,7 +1650,7 @@ div.contentRightList:hover a{
         display: none;
     }
     #entertainmentNewsLeft a.image {
-        height: 250px;
+        height: 60vw;
     }
     #entertainmentNewsRight{
         padding: 0px 15px 0px 15px !important;
@@ -1692,7 +1696,7 @@ div.contentRightList:hover a{
     }
     .articleTech a.image {
         width: 55% !important;
-        height: 97px !important;
+        height: 26vw!important;
     }
     .articleTech img {
         padding-right: 0px !important;
@@ -1724,7 +1728,7 @@ div.contentRightList:hover a{
         padding: 0px 15px
     }
     .articleLast a.image{
-        height: 97px;
+        height: 26vw!important;
         width: 80%;
     }
     .articleLast a.title{
@@ -1778,7 +1782,7 @@ div.contentRightList:hover a{
         flex-direction: column;
         position: relative;
         top: 25px;
-        left: 25px;
+        left: 15px;
         z-index: 1;
         -webkit-user-select: none;
         user-select: none;

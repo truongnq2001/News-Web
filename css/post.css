@@ -24,6 +24,10 @@
     margin-bottom: 7px;
 }
 
+.authorPublishMobile{
+    display: none !important;
+}
+
 .articleHeader{
     display: flex;
 }
@@ -165,6 +169,7 @@
     display: flex;
     width: 750px;
     margin-left: 0;
+    margin-top: 10px;
 }
 
 .footerContent i{
@@ -339,9 +344,121 @@ h2.outstandingTitle{
 
 /*Responsive Mobile*/
 @media only screen and (max-width: 740px) {
-    .categoryHeader{
-        
+    .mainBody{
+        padding-top: 85px !important;
     }
-}
+    .mainArticleContainer{
+        width: 100%;
+        margin: 0 auto;
+    }
+   
+    .articleHeader {
+        display: block;
+        margin-bottom: 10px !important;
+    }
+    .articleHeader ul{
+        display: none !important;
+    }
+    .articlePublish{
+        list-style: none;
+        margin-left: 0 !important;
+        color: #5c5959;
+    }
+    .articleAuthor{
+        list-style: none;
+        font-weight: 600;
+    }
+    .authorPublishMobile{
+        font-size: 14px;
+        padding: 0;
+        display: block !important;
+        margin-bottom: 10px !important;
+    }
+    .mainArticle{
+        padding: 0px 15px !important;
+    } 
+    .mainArticle p.title {
+        font-size: 24px;
+        margin-bottom: 10px !important;
+    }
+    .postTopSidebar{
+        display: none;
+    }
+    .footerContent{
+        width: 100%;
+        padding: 0px 15px !important;
+    }
+    .favoriteNews{
+        width: 100%;
+    }
+    .newsRow {
+        width: 100%;
+    }
+    .lastArticleContent p {
+        display: none;
+    }
+    .saveArticle p {
+        display: none;
+    }
+    .loveArticle p {
+        display: none;
+    }
+    .shareArticle{
+        margin-right: 0;
+    }
+    .endArticle a.image {
+        height: 26vw!important;
+        width: 39vw;
+        margin: 0 !important;
+    }
+    .lastArticleContainer {
+        margin-top: 30px !important;
+    }
+    .lastArticleContent a.title {
+        font-size: 16px;
+        width: 100%;
+        margin: 0 !important;
+    }
+    .endArticle{
+        margin: 0px 0px 20px 0px !important;
+        border: none;
+        padding: 0 !important;
+        width: 100% !important;
+    }
+    .lastArticleContent{
+        width: 59%;
+    }
+    .tagNews{
+        padding: 0px 15px !important;
+        flex-wrap: wrap;
+    }
+    .tagNews i{
+        margin-left: 0 !important;
+        margin-bottom: 5px;
+    }
+    .tagNews a{
+        margin-bottom: 10px;
+    }
+    a.copyLink{
+        margin-right: 0px;
+    }
+    .articleFavorite{
+        display: flex;
+        margin: 0px 0px 20px 0px !important;
+    }
+    .articleFavorite p{
+        display: none;
+    }
+    .articleFavorite a.title {
+        width: 59%;
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    .articleFavorite a.image {
+        height: 26vw!important;
+        width: 39vw;
+        margin: 0 !important;
+    }
+}   
 
 
